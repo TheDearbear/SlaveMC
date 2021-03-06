@@ -1,0 +1,27 @@
+        <header class="main">
+            <div class="main-inner">
+                <a href="/shop" class="link-header">Shop</a>
+                <a href="/" class="logo-btn"><img src="/images/logo-btn.png" alt="Logo" class="logo-header" draggable="false"></a>
+                <a href="javascript:showMessageBox()" class="link-header">Account</a>
+            </div>
+        </header>
+        <div id="blacker" class="blacker">
+            <div id="messageBox" class="messageBox">
+                <a href="javascript:hideMessageBox()" class="messageCross"><img src="/static/svg/cross/black.svg" alt="Cross"></a>
+                <div class="messageBoxContent">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><label>Nickname: </label></td>
+                                <td><input name="nickname" required=""></td>
+                            </tr>
+                            <tr>
+                                <td><label>Password: </label></td>
+                                <td><input name="password" type="password" required=""></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <input type="submit" value="Log in" onclick="authForm()" class="centerMargin">
+                </div>
+            </div>
+        </div>

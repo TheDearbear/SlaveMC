@@ -1,0 +1,125 @@
+/*
+      Theme Name: SlaveMC
+      Version: 1.0
+      Description: Theme for WordPress by Slaves from minecraft. Rich blue = #524DB8
+      Author: TheDearbear
+      Author URI: http://thedearbear.com/
+*/
+
+body { margin: 0; }
+.logo-btn { margin: 0 20px; }
+.centerText { text-align: center; }
+.centerMargin { margin: auto auto; }
+
+.main {
+    position: fixed;
+    width: 60%;
+    margin: auto 20%;
+    text-align: center;
+    padding: 10px 0px;
+    background-color: rgba(230, 230, 230, 0.5);
+    border-bottom: 2px solid black;
+}
+.main-inner {
+    display: flex;
+    justify-content: space-evenly;
+}
+.logo-header {
+    height: 64px;
+    width: 124px;
+}
+.link-header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    align-self: center;
+    text-decoration: none;
+}
+.content {
+    width: 60%;
+    margin: auto 20%;
+
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.background {
+    /*background-image: url("/images/example.png");*/
+    background-repeat: no-repeat;
+    background-size:100% auto;
+}
+.blacker {
+    display: none;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    position: fixed;
+    z-index: 2;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(1, 1, 1, 0.5);
+}
+.messageBox {
+    display: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    border-radius: 10px;
+    padding: 4px 4px 30px 30px;
+    box-shadow: 0px 0px 5px 1px lightgray;
+    background-color: white;
+
+    width: max-content;
+    margin: 40vh auto 0;
+    
+    animation-duration: 500ms;
+    animation-name: slidein;
+}
+.messageCross {
+    width: 16px;
+    height: 16px;
+    float: right;
+}
+.messageBoxContent {
+    padding-top: 30px;
+    padding-right: 40px;
+}
+
+@keyframes slidein {
+    from { margin-top: 39vh; }
+    to { margin-top: 40vh; }
+}
+
+footer.footer {
+    display: block;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+
+    margin-top: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    border-top: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: #444444;
+}
+footer.static {
+    position: relative;
+}
+
+h4 {
+    margin: 10px auto;
+}
+
+h4.AboutUs {
+    max-width: 400px;
+    word-spacing: 1px;
+    line-height: 20px;
+}
